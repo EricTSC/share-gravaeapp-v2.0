@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #282828;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.video {
+  margin: 1rem 0rem;
+  padding: 0.5rem;
+}
+
+.borda {
+    border: 2px solid #433ffc;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section2 {
+    width: 90vw;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem;
+}
+
+.icons {
+    width: 0.9rem;
+    height: auto;
+    fill: #fff;
+    margin-right: 0.4rem;
+    margin-top: 0.1rem;
+
+}
+
+.text-box {
+    align-items: left;
+    padding: 0rem 2rem;
+}
+
+.text-box p {
+    font-size: 1rem;
+    color: #999999;
+    margin: 0;
+}
+
+.local-icon {
+    width: 1.2rem;
+    height: auto;
+    margin-left: 0.2rem;
+    margin-bottom: -0.5rem;
+}
+
+.logo {
+    max-width: 8rem;
+    padding-top: 2rem;
+}
+
+#player-video {
+    max-width: 25rem;
+    padding: 4rem 0rem 4rem 0rem;
+}
+
+.bg_img {
+  align-self: center;
+  position: fixed;
+  margin-top: -1%;
+  width: 100vw;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+
+button {
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    width: 17rem;
+    height: 3rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+button:hover {
+    background-color: #ff1010;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: 1s ease;
+}
+
+.banners-ads {
+    padding: 1.5rem 0rem;
+    max-width: 92vw;
+    width: 100%;
+}
+
+  
+.slides {
+    list-style: none;
+    display: flex;
+    height: 300px;
+    width: 130vw;
+    margin: 0;
+    padding: 0;
+
+  }
+
+.slides h2 {
+    margin: 0.5rem 0rem -0.2rem 0rem;
+    font-size: 1.2rem;
+  }
+
+.slides li {
+    padding-right: 2rem;
+  }
+
+.slides img {
+    width: 65vw;
+    height: 65vw;
+    object-fit: cover;
+  }
+  
+.slides p {
+    text-align: left;
+    margin-top: 8px;
+    font-size: 0.8rem;
+
+  }
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 95vw;
+    min-height: 25rem;
+    max-height: 30rem;
+    margin: 0 auto;
+  }
+  
+.gallery-wrapper {
+    overflow-x: auto;
+    min-height: 22rem;
+    max-height: 28rem;
+  }
+  
+.arrow-left, 
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+  }
+  
+.arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+.item {
+    flex-shrink: 0;
+  }
+  
+/*
+.cyan {
+    background: cyan;
+  }
+  
+  .deeppink {
+    background: deeppink;
+  }
+  
+  .turquoise {
+    background: turquoise;
+  }
+  
+  .darkblue {
+    background: darkblue;
+  }
+  
+  .purple {
+    background: purple;
+  }
+*/
+
+  
+/* Abaixo segue o codigo para responsivo de Desktop */
+
+@media screen and (max-width: 449px) {
+
+  /* Hide scrollbar for Chrome, Opera, Safari */
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  } 
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+}
+
+@media screen and (min-width: 450px) { 
+
+.section1 {
+  max-width: 750px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  padding: 15px;
+  width: 750px;
+  min-height: 33rem;
+  max-height: 40rem;
+  margin: 0 auto;
+}
+
+.gallery-wrapper {
+  min-height: 475px;
+  max-height: 60vh;
+}
+
+.slides img {
+  max-width: 350px;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.banners-ads {
+  max-width: 650px;
+  width: 95vw;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: rgba(255, 0, 0, 0);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Open Sans';
+  text-decoration: none;
+  width: 25rem;
+  height: 3.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+button:hover {
+  background-color: #ff1010;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: 1s ease;
+}
+
+}
